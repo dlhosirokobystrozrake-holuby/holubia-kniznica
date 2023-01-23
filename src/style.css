@@ -1,0 +1,68 @@
+@import url('https://fonts.cdnfonts.com/css/american-typewriter');
+
+.header {
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+body {
+    font-family: 'American Typewriter', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main main main'
+        'footer footer footer footer footer footer';
+    gap: 4px;
+    background-color: #000000;
+    padding: 4px;
+}
+
+.grid-container>div {
+    background-color: #efe9e4;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-container>div.header {
+    background-color: #efe9e4;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-container>div.menu {
+    background-color: #beb1a7;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-container>div.main {
+    background-color: #e5e0db;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-container>div.footer {
+    background-color: #efe9e4;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
