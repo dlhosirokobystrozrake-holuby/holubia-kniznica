@@ -2,21 +2,90 @@
 <html>
 
 <head>
-	<link href="./style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="logo.svg" rel="icon" type="image/svg+xml" sizes="any">
 	<title>Holubë knižnica</title>
 </head>
 
 <body>
 	<div class="grid-container">
-		<div class="header">
-			<span id="hours">OPENING HOURS: 8 - 18 WEEKDAYS</span>
-			<img src="./logo.svg" id="logo">
+		<nav class="header">
+			<span class="home material-symbols-outlined"><a class="home" href="index.html">home</a></span>
+			<span class="tooltip-wrap" id="map-location">
+				<button class="no-target"><span class="material-symbols-outlined">location_on</span><span id="location">Haanova 28, Bratislava</span></button>
+				<div class="tooltip-content">
+					<div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;border-radius: 10px;">
+						<div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;"
+								frameborder="0"
+								src="https://www.google.com/maps/embed/v1/place?q=Haanova+28,+Petržalka,+Slovakia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+						</div>
+						<style>
+							#embed-map-display img {
+								max-width: none !important;
+								background: none !important;
+								font-size: inherit;
+								font-weight: inherit;
+							}
+						</style>
+					</div>
+				</div>
+			</span>
+			<span id="telephone">
+				<button class="no-target"><span class="material-symbols-outlined">call</span> <span id="tel-num">+420 420 69 69 69</span></button>
+			</span>
+			<span class="tooltip-wrap" id="hours">
+				<button class="no-target"><span class="material-symbols-outlined">schedule</span> OPENING HOURS: <span id="hrs-actual">8 - 18
+						WEEKDAYS</span></button>
+				<div class="tooltip-content">
+					<ul>
+						<li><b>MON</b>: <i>8:00 - 18:00</i></li>
+						<li><b>TUE</b>: <i>8:00 - 18:00</i></li>
+						<li><b>WED</b>: <i>8:00 - 18:00</i></li>
+						<li><b>THU</b>: <i>8:00 - 18:00</i></li>
+						<li><b>FRI</b>: <i>8:00 - 18:00</i></li>
+						<li><b>SAT</b>: <i class="accent">9:00 - 12:00</i></li>
+						<li><b>SUN</b>: <b><i class="danger">CLOSED</i></b></li>
+					</ul>
+				</div>
+			</span>
+		</nav>
+		<img src="./logo.svg" id="logo">
+		<div class="menu">
+			<span id="sidebar-header">Menu:</span>
+			<ul id="sidebar-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="contact.html">Looking for us?</a></li>
+				<li><a href="contact.html">Call us</a></li>
+				<li><a href="contact.html">E-mail us</a></li>
+			</ul>
 		</div>
-		<div class="menu"><span>Menu</span></div>
-		<div class="main">Main</div>
-		<div class="footer">Footer</div>
+		<div class="main">
+			<h1 id="titleText">Infinite Library</h1>
+			<div class="spin">
+				<p>Generating content<span class="loadingDots">...</span></p>
+				<img src="logo.svg" alt="logo" id="pageLogo" class="spin speed backwards">
+				<p class="upsidedown">Creating content<span class="loadingDots">...</span></p>
+			</div>
+		</div>
+		<div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, debitis quisquam cum suscipit fuga eveniet eaque! Excepturi sint
+			assumenda architecto dolorum, dolorem consequatur. Placeat adipisci impedit expedita asperiores minus. Placeat?</div>
 	</div>
 
+	<!-- Script -->
+	<script src="script.js"></script>
+	<script>
+		// Display opening hours of today
+		let hrs = document.getElementById('hrs-actual');
+		const date = new Date();
+		let day = date.getDay();
+		if (day <= 5 && day >= 1)
+			hrs.innerHTML = '<i>8:00 - 18:00</i>';
+		else if (day == 6)
+			hrs.innerHTML = '<i class="accent">9:00 - 12:00</i>';
+		else
+			hrs.innerHTML = '<b><i class="danger">CLOSED</i></b>';
+	</script>
 </body>
 
 </html>
