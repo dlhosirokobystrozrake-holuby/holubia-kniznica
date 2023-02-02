@@ -4,19 +4,22 @@
     grid-column: span 2;
     z-index: 1;
     background-color: #efe9e4;
+    min-height: 1.5em;
+    line-height: 100%;
+    padding: 0 2em;
 }
 
-.header>img#logo {
+#logo {
     position: absolute;
     z-index: 1;
-    top: -4px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    max-height: 4em;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    height: 6em;
     background-color: #efe9e4;
     border-radius: 50%;
     border: 4px solid black;
     border-top: none;
+    transform: translate(-50%, -50%);
 }
 
 .menu {
@@ -48,9 +51,10 @@ body {
     grid-template-columns: auto 1fr;
     gap: 4px;
     background-color: #000000;
+    position: relative;
 }
 
-.grid-container>div {
+:where(.grid-container > div) {
     text-align: center;
     padding: 2px 0;
     font-size: 30px;
