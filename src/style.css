@@ -223,3 +223,8 @@ button.no-target {
 .upsidedown {
 	transform: rotate(180deg);
 }
+
+.contact-map {
+	display: flex;
+	justify-content: center;
+}
