@@ -37,14 +37,6 @@
     background-color: #efe9e4;
 }
 
-@media(max-width: 50em) {
-    .header>img#logo {
-        left: calc(100%/6);
-        transform: translate(-5%, -2px);
-        max-height: 3em;
-    }
-}
-
 body {
     font-family: 'American Typewriter', sans-serif;
     background-color: #efe9e4;
