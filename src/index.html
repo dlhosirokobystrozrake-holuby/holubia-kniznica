@@ -2,21 +2,49 @@
 <html>
 
 <head>
-	<link href="./style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="logo.svg" rel="icon" type="image/svg+xml" sizes="any">
 	<title>Holubë knižnica</title>
 </head>
 
 <body>
 	<div class="grid-container">
-		<div class="header">
-			<span id="hours">OPENING HOURS: 8 - 18 WEEKDAYS</span>
-		</div>
+		<nav class="header">
+			<span id="telephone"><span class="material-symbols-outlined">call</span> <span id="tel-num">+420 420 69 69 69</span></span>
+			<span class="tooltip-wrap" id="hours">
+				<a><span class="material-symbols-outlined">schedule</span> OPENING HOURS: <span id="hrs-actual">8 - 18 WEEKDAYS</span></a>
+				<div class="tooltip-content">
+					<ul>
+						<li><b>MON</b>: <i>8:00 - 18:00</i></li>
+						<li><b>TUE</b>: <i>8:00 - 18:00</i></li>
+						<li><b>WED</b>: <i>8:00 - 18:00</i></li>
+						<li><b>THU</b>: <i>8:00 - 18:00</i></li>
+						<li><b>FRI</b>: <i>8:00 - 18:00</i></li>
+						<li><b>SAT</b>: <i class="accent">9:00 - 12:00</i></li>
+						<li><b>SUN</b>: <b><i class="danger">CLOSED</i></b></li>
+					</ul>
+				</div>
+			</span>
+		</nav>
 		<img src="./logo.svg" id="logo">
 		<div class="menu"><span>Menu:</span></div>
 		<div class="main">Main</div>
 		<div class="footer">Footer</div>
 	</div>
 
+	<!-- Script -->
+	<script>
+		// Display opening hours of today
+		let hrs = document.getElementById('hrs-actual');
+		const date = new Date();
+		let day = date.getDay();
+		if(day <= 5 && day >= 1)
+			hrs.innerHTML = '<i>8:00 - 18:00</i>';
+		else if(day == 6)
+			hrs.innerHTML = '<i class="accent">9:00 - 12:00</i>';
+		else
+			hrs.innerHTML = '<b><i class="danger">CLOSED</i></b>';
+	</script>
 </body>
 
 </html>

@@ -1,67 +1,120 @@
 @import url('https://fonts.cdnfonts.com/css/american-typewriter');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 .header {
-    grid-column: span 2;
-    z-index: 1;
-    background-color: #efe9e4;
-    min-height: 1.5em;
-    line-height: 100%;
-    padding: 0 2em;
+	position: relative;
+	grid-column: span 2;
+	z-index: 1;
+	background-color: #f1dac7;
+	height: 2em;
+	padding: 0 2em;
+	line-height: 2em;
 }
 
 #logo {
-    position: absolute;
-    z-index: 1;
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-    height: 6em;
-    background-color: #efe9e4;
-    border-radius: 50%;
-    border: 4px solid black;
-    border-top: none;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	z-index: 1;
+	grid-column: 2 / 2;
+	grid-row: 2 / 2;
+	height: 6em;
+	background-color: #efe9e4;
+	border-radius: 50%;
+	border: 4px solid black;
+	transform: translate(-50%, -50%);
 }
 
 .menu {
-    background-color: #beb1a7;
-    padding: .5em;
-    padding-top: 1.5em !important;
-    min-width: 4em;
+	background-color: #beb1a7;
+	padding: .5em;
+	padding-top: 1.5em;
+	min-width: 4em;
 }
 
 .main {
-    background-color: #e5e0db;
-    padding: 20px 0;
-    min-height: 15em;
+	background-color: #e5e0db;
+	padding: 20px 0;
+	min-height: 15em;
 }
 
 .footer {
-    grid-column: span 2;
-    background-color: #efe9e4;
+	grid-column: span 2;
+	background-color: #efe9e4;
 }
 
 body {
-    font-family: 'American Typewriter', sans-serif;
-    background-color: #efe9e4;
-    margin: 0;
+	font-family: 'American Typewriter', sans-serif;
+	background-color: #efe9e4;
+	margin: 0;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 4px;
-    background-color: #000000;
-    position: relative;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 4px;
+	background-color: #000000;
+	position: relative;
 }
 
-:where(.grid-container > div) {
-    text-align: center;
-    padding: 2px 0;
-    font-size: 30px;
+:where(.grid-container > :where(div, nav)) {
+	text-align: center;
+	padding: 2px 0;
+	font-size: 30px;
 }
 
-#hours {
-    font-size: 15px;
-    float: right;
-    margin: .25em 1em;
+.tooltip-wrap {
+	position: relative
+}
+
+.tooltip-wrap .tooltip-content {
+	display: none;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	background-color: #beb1a7;
+	padding: .05em;
+	min-width: 10rem;
+	max-width: 15rem;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+.tooltip-wrap:hover .tooltip-content {
+	display: block;
+}
+
+.header>span {
+	font-size: 20px;
+	float: right;
+	margin: .25em 1em;
+}
+
+#tel-num {
+	text-decoration: underline;
+	user-select: all;
+	-moz-user-select: all;
+	-webkit-user-select: all;
+}
+
+#hours>.tooltip-content>ul {
+	text-align: justify;
+	line-height: 1.3em;
+	margin: .5em 0;
+}
+
+.accent {
+	color: darkgreen;
+}
+
+.danger {
+	color: red;
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 48;
+	font-size: inherit + 1;
+	transform: translate(0, 0.2em);
 }
