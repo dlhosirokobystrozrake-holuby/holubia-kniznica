@@ -1,16 +1,29 @@
 @import url('https://fonts.cdnfonts.com/css/american-typewriter');
+@import url('https://fonts.cdnfonts.com/css/amrelia');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 48;
+	font-size: inherit + 1;
+	transform: translate(0, 0.2em);
+}
 
 .header {
 	position: relative;
 	grid-column: span 2;
 	z-index: 1;
 	background-color: #f1dac7;
-	height: 2em;
+	min-height: 2em;
 	padding: 0 2em;
+	padding-left: 8em;
 	line-height: 2em;
 	display: flex;
 	justify-content: flex-end;
+	flex-wrap: wrap;
 }
 
 #logo {
@@ -30,6 +43,7 @@
 	padding: .5em;
 	padding-top: 1.5em;
 	min-width: 4em;
+	max-width: 8em;
 }
 
 .main {
@@ -41,6 +55,8 @@
 .footer {
 	grid-column: span 2;
 	background-color: #efe9e4;
+	padding: 2em 10em;
+	font-size: large;
 }
 
 body {
@@ -64,7 +80,7 @@ body {
 }
 
 .tooltip-wrap {
-	position: relative
+	position: relative;
 }
 
 .tooltip-wrap .tooltip-content {
@@ -79,9 +95,14 @@ body {
 	max-width: 15rem;
 	border-radius: 10px;
 	border: 2px solid black;
+	z-index: 10;
 }
 
 .tooltip-wrap:hover .tooltip-content {
+	display: block;
+}
+
+.tooltip-wrap:focus .tooltip-content {
 	display: block;
 }
 
@@ -117,16 +138,23 @@ body {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: dashed underline;
 	color: inherit;
 }
 
-.material-symbols-outlined {
-	font-variation-settings:
-		'FILL' 0,
-		'wght' 400,
-		'GRAD' 0,
-		'opsz' 48;
-	font-size: inherit + 1;
-	transform: translate(0, 0.2em);
+button.no-target {
+	text-decoration: none;
+	background: none;
+	border: none;
+	font: inherit;
+}
+
+#sidebar-list {
+	text-align: left;
+	margin: 0;
+}
+
+#sidebar-header {
+	font-family:'Amrelia', sans-serif;
+	font-size: 3rem;
 }

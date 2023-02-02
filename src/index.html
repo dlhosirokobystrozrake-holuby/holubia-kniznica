@@ -11,13 +11,13 @@
 	<div class="grid-container">
 		<nav class="header">
 			<span class="tooltip-wrap" id="map-location">
-				<a href="contact.html"><span class="material-symbols-outlined">location_on</span><span id="location">Haanova 28, Bratislava</span></a>
+				<button class="no-target"><span class="material-symbols-outlined">location_on</span><span id="location">Haanova 28, Bratislava</span></button>
 				<div class="tooltip-content">
 					<div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;border-radius: 10px;">
 						<div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;"
 								frameborder="0"
 								src="https://www.google.com/maps/embed/v1/place?q=Haanova+28,+Petržalka,+Slovakia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-						</div><a class="embed-ded-maphtml" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a>
+						</div>
 						<style>
 							#embed-map-display img {
 								max-width: none !important;
@@ -30,10 +30,10 @@
 				</div>
 			</span>
 			<span id="telephone">
-				<a href="contact.html"><span class="material-symbols-outlined">call</span> <span id="tel-num">+420 420 69 69 69</span></a>
+				<button class="no-target"><span class="material-symbols-outlined">call</span> <span id="tel-num">+420 420 69 69 69</span></button>
 			</span>
 			<span class="tooltip-wrap" id="hours">
-				<a href="contact.html"><span class="material-symbols-outlined">schedule</span> OPENING HOURS: <span id="hrs-actual">8 - 18 WEEKDAYS</span></a>
+				<button class="no-target"><span class="material-symbols-outlined">schedule</span> OPENING HOURS: <span id="hrs-actual">8 - 18 WEEKDAYS</span></button>
 				<div class="tooltip-content">
 					<ul>
 						<li><b>MON</b>: <i>8:00 - 18:00</i></li>
@@ -48,9 +48,17 @@
 			</span>
 		</nav>
 		<img src="./logo.svg" id="logo">
-		<div class="menu"><span>Menu:</span></div>
+		<div class="menu">
+			<span id="sidebar-header">Menu:</span>
+			<ul id="sidebar-list">
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="contact.html">Looking for us?</a></li>
+				<li><a href="contact.html">Call us</a></li>
+				<li><a href="contact.html">E-mail us</a></li>
+			</ul>
+		</div>
 		<div class="main">Main</div>
-		<div class="footer">Footer</div>
+		<div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, debitis quisquam cum suscipit fuga eveniet eaque! Excepturi sint assumenda architecto dolorum, dolorem consequatur. Placeat adipisci impedit expedita asperiores minus. Placeat?</div>
 	</div>
 
 	<!-- Script -->
