@@ -9,6 +9,8 @@
 	height: 2em;
 	padding: 0 2em;
 	line-height: 2em;
+	display: flex;
+	justify-content: flex-end;
 }
 
 #logo {
@@ -70,6 +72,7 @@ body {
 	position: absolute;
 	left: 5%;
 	right: 5%;
+	top: 3rem;
 	background-color: #beb1a7;
 	padding: .05em;
 	min-width: 10rem;
@@ -84,8 +87,12 @@ body {
 
 .header>span {
 	font-size: 20px;
-	float: right;
 	margin: .25em 1em;
+}
+
+#map-location > .tooltip-content {
+	max-width: fit-content;
+	min-width: 30rem;
 }
 
 #tel-num {
@@ -107,6 +114,11 @@ body {
 
 .danger {
 	color: red;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .material-symbols-outlined {

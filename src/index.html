@@ -10,9 +10,30 @@
 <body>
 	<div class="grid-container">
 		<nav class="header">
-			<span id="telephone"><span class="material-symbols-outlined">call</span> <span id="tel-num">+420 420 69 69 69</span></span>
+			<span class="tooltip-wrap" id="map-location">
+				<a href="contact.html"><span class="material-symbols-outlined">location_on</span><span id="location">Haanova 28, Bratislava</span></a>
+				<div class="tooltip-content">
+					<div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;border-radius: 10px;">
+						<div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;"
+								frameborder="0"
+								src="https://www.google.com/maps/embed/v1/place?q=Haanova+28,+Petržalka,+Slovakia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+						</div><a class="embed-ded-maphtml" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a>
+						<style>
+							#embed-map-display img {
+								max-width: none !important;
+								background: none !important;
+								font-size: inherit;
+								font-weight: inherit;
+							}
+						</style>
+					</div>
+				</div>
+			</span>
+			<span id="telephone">
+				<a href="contact.html"><span class="material-symbols-outlined">call</span> <span id="tel-num">+420 420 69 69 69</span></a>
+			</span>
 			<span class="tooltip-wrap" id="hours">
-				<a><span class="material-symbols-outlined">schedule</span> OPENING HOURS: <span id="hrs-actual">8 - 18 WEEKDAYS</span></a>
+				<a href="contact.html"><span class="material-symbols-outlined">schedule</span> OPENING HOURS: <span id="hrs-actual">8 - 18 WEEKDAYS</span></a>
 				<div class="tooltip-content">
 					<ul>
 						<li><b>MON</b>: <i>8:00 - 18:00</i></li>
@@ -38,9 +59,9 @@
 		let hrs = document.getElementById('hrs-actual');
 		const date = new Date();
 		let day = date.getDay();
-		if(day <= 5 && day >= 1)
+		if (day <= 5 && day >= 1)
 			hrs.innerHTML = '<i>8:00 - 18:00</i>';
-		else if(day == 6)
+		else if (day == 6)
 			hrs.innerHTML = '<i class="accent">9:00 - 12:00</i>';
 		else
 			hrs.innerHTML = '<b><i class="danger">CLOSED</i></b>';
