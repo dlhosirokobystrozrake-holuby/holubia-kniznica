@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/american-typewriter');
-@import url('https://fonts.cdnfonts.com/css/amrelia');
+@import url('https://fonts.cdnfonts.com/css/zapfino-extra-lt-pro');
+/* @import url('https://fonts.cdnfonts.com/css/amrelia'); */
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 /* 🌐 */
@@ -182,13 +183,14 @@ button.no-target {
 }
 
 #sidebar-header {
-	font-family: 'Amrelia', sans-serif;
-	font-size: 3rem;
+	font-family: 'Zapfino Extra LT Pro', sans-serif;
+	font-size: 5rem;
+	margin-top: .5rem;
 }
 
 #titleText {
-	font-family: 'Amrelia', sans-serif;
-	font-size: 2em;
+	font-family: 'Zapfino Extra LT Pro', sans-serif;
+	font-size: 3em;
 	margin: 0;
 }
 
@@ -227,4 +229,8 @@ button.no-target {
 .contact-map {
 	display: flex;
 	justify-content: center;
+}
+
+.link-sel {
+	color: white;
 }
