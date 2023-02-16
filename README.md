@@ -1,9 +1,9 @@
 # holubia-kniznica (_pigeon-library_)
 ### ALL BOOKS IN THE WHOLE WORLD AT OUR _pigeon_ LIBRARY
-Look into `src/index.html` or by using the [HTML preview for GitHub page](http://htmlpreview.github.io/?https://github.com/dlhosirokobystrozrake-holuby/holubia-kniznica/blob/main/src/index.html)  
+To start look into `src/index.html` or by using the [HTML preview for GitHub page](http://htmlpreview.github.io/?https://github.com/dlhosirokobystrozrake-holuby/holubia-kniznica/blob/main/src/index.html)  
 
 ### VSETKY KNIHY NA SVETE JEDINE U NAS, V NASEJ _holubej_ KNIZNICI
-Pozri sa do `src/index.html` alebo použitím [HTML ukážka pre GitHub stránku](http://htmlpreview.github.io/?https://github.com/dlhosirokobystrozrake-holuby/holubia-kniznica/blob/main/src/index.html)  
+Pre začiatok sa pozri do `src/index.html` alebo použi [HTML ukážka pre GitHub stránku](http://htmlpreview.github.io/?https://github.com/dlhosirokobystrozrake-holuby/holubia-kniznica/blob/main/src/index.html)  
 
 ## Source code:
 > _All code is located inside the [`src`](https://github.com/dlhosirokobystrozrake-holuby/holubia-kniznica/tree/main/src) folder/directory_  
