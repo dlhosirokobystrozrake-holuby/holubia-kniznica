@@ -24,11 +24,31 @@
 				<li class="link-sel"><a href="contact.html">E-mail us</a></li>
 			</ul>
 		</div>
-		<div class="main">
-			<div class="contact-map">
-				<div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;border-radius: 10px;">
-					<div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;"
-							frameborder="0"
+		<div class="main contact-layout">
+			<div class="main-contact-content">
+				<h3>Opening hours:</h3>
+				<b>Today:</b> <span id="hrs-actual">Today hrs</span>
+				<ul>
+					<li><b>MON</b>: <i>8:00 - 18:00</i></li>
+					<li><b>TUE</b>: <i>8:00 - 18:00</i></li>
+					<li><b>WED</b>: <i>8:00 - 18:00</i></li>
+					<li><b>THU</b>: <i>8:00 - 18:00</i></li>
+					<li><b>FRI</b>: <i>8:00 - 18:00</i></li>
+					<li><b>SAT</b>: <i class="accent">9:00 - 12:00</i></li>
+					<li><b>SUN</b>: <b><i class="danger"> CLOSED &ensp;</i></b></li>
+				</ul>
+			</div>
+			<div class="main-contact-content">
+				<h3>Contact us</h3>
+				<span class="material-symbols-outlined">call</span> <span id="tel-num">+420 420 69 69 69</span>
+				<br>
+				<span class="material-symbols-outlined">mail</span> <span id="email">support@infinite-library.com</span>
+			</div>
+			<div class="contact-map main-contact-content">
+				<h3>Where can you find us</h3><br>
+				<div class="map-wrapper">
+					<div id="embed-map-display" style="height:100%; width:100%;max-width:100%;">
+						<iframe style="height:100%;width:100%;border:0;" frameborder="0"
 							src="https://www.google.com/maps/embed/v1/place?q=Haanova+28,+Petržalka,+Slovakia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
 					</div>
 					<style>
@@ -41,13 +61,16 @@
 					</style>
 				</div>
 			</div>
-			<div class="spin backwards">
-				<p>Loading content<span class="loadingDots">...</span></p>
-				<img src="logo.svg" alt="logo" id="pageLogo" class="spin speed">
-				<p class="upsidedown">Fetching content<span class="loadingDots">...</span></p>
+			<div class="spinwrapper">
+				<div class="spin backwards">
+					<p>Loading content<span class="loadingDots">...</span></p>
+					<img src="logo.svg" alt="logo" id="pageLogo" class="spin speed">
+					<p class="upsidedown">Fetching content<span class="loadingDots">...</span></p>
+				</div>
 			</div>
 		</div>
-		<div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, debitis quisquam cum suscipit fuga eveniet eaque! Excepturi sint assumenda architecto dolorum, dolorem consequatur. Placeat adipisci impedit expedita asperiores minus. Placeat?</div>
+		<div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, debitis quisquam cum suscipit fuga eveniet eaque! Excepturi sint
+			assumenda architecto dolorum, dolorem consequatur. Placeat adipisci impedit expedita asperiores minus.</div>
 	</div>
 	<script src="script.js"></script>
 </body>
