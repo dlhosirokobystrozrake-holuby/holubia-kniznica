@@ -1,8 +1,8 @@
-# holubia-kniznica _pigeon-library_
-**ALL BOOKS IN THE WHOLE WORLD AT OUR _pigeon_ LIBRARY**  
+# holubia-kniznica (_pigeon-library_)
+### ALL BOOKS IN THE WHOLE WORLD AT OUR _pigeon_ LIBRARY
 Look into `src/index.html` or by using the [HTML preview for GitHub page](http://htmlpreview.github.io/?https://github.com/dlhosirokobystrozrake-holuby/holubia-kniznica/blob/main/src/index.html)  
 
-**VSETKY KNIHY NA SVETE JEDINE U NAS, V NASEJ _holubej_ KNIZNICI**  
+### VSETKY KNIHY NA SVETE JEDINE U NAS, V NASEJ _holubej_ KNIZNICI
 Pozri sa do `src/index.html` alebo použitím [HTML ukážka pre GitHub stránku](http://htmlpreview.github.io/?https://github.com/dlhosirokobystrozrake-holuby/holubia-kniznica/blob/main/src/index.html)  
 
 ## Source code:
